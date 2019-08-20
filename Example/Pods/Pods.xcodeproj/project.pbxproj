@@ -62,8 +62,8 @@
 
 /* Begin PBXFileReference section */
 		06B2649E7D26CCD7CF882530DB40EA4D /* Pods-MXSUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXSUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0E800E76E94F226561C952FD5740D3FA /* MXSUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MXSUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
-		0F4EE2988D206A4A197A9DAE7785E2AD /* Pods_MXSUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MXSUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E800E76E94F226561C952FD5740D3FA /* MXSUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MXSUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0F4EE2988D206A4A197A9DAE7785E2AD /* Pods_MXSUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MXSUIKit_Tests.framework; path = "Pods-MXSUIKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		164111C83585776A0613A16933F0A046 /* MXSUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXSUIKit.xcconfig; sourceTree = "<group>"; };
 		1CD9DBF8958CD6548FE253F411E8284D /* Pods-MXSUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MXSUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		26C57544C0D9AAFF05E7DE8DF2EEDC82 /* MXSUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXSUIKit-dummy.m"; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		441EA91153A5AF20ED2D73C16350A6C3 /* Pods-MXSUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MXSUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4983E41B1F9DD406805205637D32BE9A /* Pods-MXSUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXSUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4C97BF3AC50DF2E7D52E1128655F0201 /* Pods-MXSUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXSUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		50765706B0ABCC853AF9CFFA79C71BD5 /* MXSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MXSUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50765706B0ABCC853AF9CFFA79C71BD5 /* MXSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MXSUIKit.framework; path = MXSUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3049585E9F74C95923025B34851D8D /* UIColor+RHColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+RHColor.h"; path = "MXSUIKit/Classes/UIColor+RHColor.h"; sourceTree = "<group>"; };
 		61FF694D41C667836B8C0397CA09C6E0 /* Pods-MXSUIKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXSUIKit_Tests-Info.plist"; sourceTree = "<group>"; };
 		6A043D1C5DC2F938A29693112C60371D /* UIColor+RHColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+RHColor.m"; path = "MXSUIKit/Classes/UIColor+RHColor.m"; sourceTree = "<group>"; };
@@ -90,8 +90,8 @@
 		995B8BE13E98E031124406501B01DF95 /* Pods-MXSUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXSUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		99AB9A1CFF9551D58D2D5F10AEE7C141 /* UIView+RHGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHGesture.h"; path = "MXSUIKit/Classes/UIView+RHGesture.h"; sourceTree = "<group>"; };
 		99DBD55BBB840D1E70681E11A54AB2E5 /* UIView+RHAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHAnimation.m"; path = "MXSUIKit/Classes/UIView+RHAnimation.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0B610B81C0DE7A2BA3484F8272372B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B610B81C0DE7A2BA3484F8272372B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		AAFCD3E570E29140C6E1868FA97D6728 /* Pods-MXSUIKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXSUIKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B14ECA627A6680EF20931B12A4B3A418 /* Pods-MXSUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MXSUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		B7BE0000432AFE4879EAC7D0CF7080CA /* Pods-MXSUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MXSUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		BC70AE6F39CFE5F5EC76BD17CB403AF4 /* UIImage+RHImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RHImage.h"; path = "MXSUIKit/Classes/UIImage+RHImage.h"; sourceTree = "<group>"; };
 		BCBCB2F7364223B50B0AD4DA9E691672 /* UIView+RHTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHTransition.m"; path = "MXSUIKit/Classes/UIView+RHTransition.m"; sourceTree = "<group>"; };
 		C3D8E90F60AC6065F03055D2F5320937 /* UIButton+RHButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+RHButton.h"; path = "MXSUIKit/Classes/UIButton+RHButton.h"; sourceTree = "<group>"; };
-		C3F13BA1F8CE8AE3C29B95E3291EB090 /* Pods_MXSUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MXSUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F13BA1F8CE8AE3C29B95E3291EB090 /* Pods_MXSUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MXSUIKit_Example.framework; path = "Pods-MXSUIKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6EBFB417DFA6BB0302CC158D389947D /* UIImage+RHImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RHImage.m"; path = "MXSUIKit/Classes/UIImage+RHImage.m"; sourceTree = "<group>"; };
 		C7A0E547822001226C228248C1C304E6 /* UIButton+RHButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RHButton.m"; path = "MXSUIKit/Classes/UIButton+RHButton.m"; sourceTree = "<group>"; };
 		CD94FBBF3CA8E97C8C27008789678E62 /* UIFont+RHFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+RHFont.m"; path = "MXSUIKit/Classes/UIFont+RHFont.m"; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		EC94E7264BF40AF55F82E8A89D2F4684 /* Pods-MXSUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MXSUIKit_Tests.modulemap"; sourceTree = "<group>"; };
 		EC9AC846363D7E8E1D1F6192A8A4B5E5 /* UIView+RHAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHAnimation.h"; path = "MXSUIKit/Classes/UIView+RHAnimation.h"; sourceTree = "<group>"; };
 		ED1B6736B392014185930C39DD9B1536 /* MXSUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MXSUIKit-Info.plist"; sourceTree = "<group>"; };
-		F2AEE10BE92D2F2D5AD1885D4587506A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F2AEE10BE92D2F2D5AD1885D4587506A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F342EF9E18D50328CC3D88E8AA5DE49C /* UIView+RHTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHTransition.h"; path = "MXSUIKit/Classes/UIView+RHTransition.h"; sourceTree = "<group>"; };
 		F54A85D550E17543481CE33E745862C5 /* UIView+RHGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHGesture.m"; path = "MXSUIKit/Classes/UIView+RHGesture.m"; sourceTree = "<group>"; };
 		F6787FA715FEE6492A0540E530E86E4A /* MXSUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MXSUIKit.modulemap; sourceTree = "<group>"; };
@@ -715,7 +715,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
