@@ -7,8 +7,6 @@
 //
 
 #import "UIImage+RHImage.h"
-#import "UIScreen+RHScreen.h"
-
 #import <ImageIO/ImageIO.h>
 #import <Accelerate/Accelerate.h>
 
@@ -397,8 +395,12 @@
                                      completion:(RHImage)completion {
     
     [self rh_asyncCreate128BarcodeImageWithString:string
-                                       imageSpace:[UIScreen rh_fitScreen:14]
+                                       imageSpace:[self rh_fitScreen:14]
                                        completion:completion];
+}
+
++ (CGFloat)rh_fitScreen:(CGFloat)value {
+    return ceilf([[UIScreen mainScreen] bounds].size.width / (750.0f / 2)  * (value / 2.0f));
 }
 
 + (void)rh_asyncCreate128BarcodeImageWithString:(NSString *)string
