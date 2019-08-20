@@ -1,0 +1,6 @@
+framework module MXSUIKit {
+  umbrella header "MXSUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
