@@ -11,6 +11,11 @@
 
 
 #import "UIView+RHAdd.h"
+#import "UIView+RectCorners.h"
+#import "UIView+RHBorders.h"
+#import "UIView+RHLine.h"
+#import "UIView+Shadow.h"
+
 #import "UIView+RHGesture.h"
 #import "UIView+RHTransition.h"
 #import "UIView+RHAnimation.h"

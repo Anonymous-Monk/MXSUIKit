@@ -33,6 +33,70 @@ typedef void(^RHImage)(UIImage *image);
                              rect:(CGRect)rect
                        completion:(RHImage)completion;
 
+#pragma mark - 合并图片
+/**
+ 合并两个Image
+
+ @param image1
+ @param image2
+ @param frame1
+ @param frame2
+ @param size
+ @return 指定视图
+ */
++ (UIImage *)mergeWithImage1:(UIImage *)image1 image2:(UIImage *)image2 frame1:(CGRect)frame1 frame2:(CGRect)frame2 size:(CGSize)size;
+
+
+/**
+ 把一个Image盖在另一个Image上面
+
+ @param image 底层image
+ @param mask 上层image
+ @return 指定视图
+ */
++ (UIImage *)maskImage:(UIImage *)image withMask:(UIImage *)mask;
+
+#pragma mark - 打水印
+
+/**
+ *  打水印
+ *
+ *  @param bg   背景图片
+ *  @param logo 右下角的水印图片
+ */
++ (UIImage *)waterImageWithBg:(UIImage *)bg logo:(UIImage *)logo;
+
+/**
+ *  给图片加文字水印
+ *
+ *  @param str     水印文字
+ *  @param strRect 文字所在的位置大小
+ *  @param attri   文字的相关属性，自行设置
+ *
+ *  @return 加完水印文字的图片
+ */
+- (UIImage*)imageWaterMarkWithString:(NSString*)str rect:(CGRect)strRect attribute:(NSDictionary *)attri;
+
+/**
+ 给图片加文字水印
+ 
+ @param str 水印文字
+ @param point 文字所在的位置
+ @param attri 文字的相关属性，自行设置
+ @return 加完水印文字的图片
+ */
+- (UIImage*)imageWaterMarkWithString:(NSString*)str point:(CGPoint)point attribute:(NSDictionary *)attri;
+
+/**
+ 给图片加文字水印
+ 
+ @param str 水印文字
+ @param point 文字所在的位置
+ @param attri 文字的相关属性，自行设置
+ @return 加完水印文字的图片
+ */
+- (UIImage *)imageWaterMarkWithAttributedString:(NSAttributedString *)str point:(CGPoint)point;
+
 #pragma mark - 截取指定视图大小的截图
 /**
  截取指定视图大小的截图
@@ -164,5 +228,15 @@ typedef void(^RHImage)(UIImage *image);
                           borderColor:(UIColor *)borderColor
                            completion:(RHImage)completion;
 
+#pragma mark - 图片底色处理
+/**
+ *  图片底色处理
+ *
+ *  @param anImage 要处理的图片
+ *  @param type    1:黑白 2:变淡 3:曝光 其他:原图
+ *
+ *  @return 处理好的图片
+ */
++ (UIImage *)grayscale:(UIImage *)anImage type:(int)type;
 
 @end

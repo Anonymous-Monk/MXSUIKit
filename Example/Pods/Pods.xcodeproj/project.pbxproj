@@ -7,40 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00093B53CBE0B155F42002F82FDD6D4F /* UIImage+RHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C6EBFB417DFA6BB0302CC158D389947D /* UIImage+RHImage.m */; };
-		086015F9089B895BD91E44CDE8E2A39C /* UIImage+RHImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BC70AE6F39CFE5F5EC76BD17CB403AF4 /* UIImage+RHImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AB05A903686E0B8FDF562858D0FF858 /* UIBarButtonItem+RHBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 806CB271C757D9FF194E186CF17F19B1 /* UIBarButtonItem+RHBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0B771CE24CE3506C49ADB4E23F5BB21A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		06877F48C0D7DCD0F8446FD3D81FABC8 /* RHUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E68D62E0F4379191098C3603BE60A889 /* RHUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A110832F07CE7AB4E23FD325F66D527 /* UIButton+RHButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DF52D38E34A4EBEF9A0C4DF69B7E7482 /* UIButton+RHButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0DF46D68DB3FBED3632ADD070716CA31 /* Pods-MXSUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B14ECA627A6680EF20931B12A4B3A418 /* Pods-MXSUIKit_Tests-dummy.m */; };
-		0F5F2C2C28182F0FCA84F524A214C4A0 /* UIButton+RHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C7A0E547822001226C228248C1C304E6 /* UIButton+RHButton.m */; };
-		143E1AE1B460E58AD38650F3C3B190F0 /* UIBarButtonItem+RHBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F697E784DD637D96CCEBEFE80404A2 /* UIBarButtonItem+RHBarItem.m */; };
-		14A4D410F90855909CE956C5D6A01B8A /* UIControl+FixMultiClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BAFFA86B5F8BDE5435FD880D6F63657 /* UIControl+FixMultiClick.m */; };
-		2079772C624110BB8AF9187CD8DAD6BC /* UIFont+RHFont.h in Headers */ = {isa = PBXBuildFile; fileRef = D30484A789497B5A5835DC435156A051 /* UIFont+RHFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E7AD9B766D65B6387F2A4072BE90864 /* UIView+RHGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D201A63ABC7A2E09B892BCC213179D6E /* UIView+RHGesture.m */; };
+		121B9620474931EAB25F09F8D23748E7 /* UIView+RHAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 52A25BEC27858E6D42F92EAE7303F527 /* UIView+RHAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		195D681F99F873460A1F172D2BEE5C65 /* UIView+RHTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D9C6D26BA551BD65401636FCF7CCA2 /* UIView+RHTransition.m */; };
+		1F30EA89B0F77CBEDEE1B2148FF6AA0F /* UIView+RHGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 87FA22609D32361DF5292E25D370A615 /* UIView+RHGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		239E6FD35365D0287C9B6B63F628061F /* UIImageView+RHAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = BE92DA8A98937DC3622737D9AA4E5EF0 /* UIImageView+RHAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2837B290C18CD139E57EAA5AB111FFEE /* UIColor+RHColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B40207A46CE766A26D3276B70E09B4A /* UIColor+RHColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C5F062A15652417C5E6CB1E294CD366 /* UIView+RHLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 203F7485F1DA554F29BDC6450635C8B8 /* UIView+RHLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3023491E8E7440EB6726FDD57B09BA6A /* Pods-MXSUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B7BE0000432AFE4879EAC7D0CF7080CA /* Pods-MXSUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		371E38E81DD0BC0E82AE6D14E4CABCD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3D0BE788523A859BD943E5EF52A462AA /* MXSUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3E2E6975811491B21826893394851D2 /* MXSUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		455D0BBDCD43C0609639C0D4CEDCF7F1 /* Pods-MXSUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A0FBFF42A43E3C152B8566CAFF41896 /* Pods-MXSUIKit_Example-dummy.m */; };
-		46A94DB715C0C8A84DEE3D842DCBCA40 /* UIControl+FixMultiClick.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BEB0706AB53E831366FA18E7BA8D0B0 /* UIControl+FixMultiClick.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5318898B70C4FE9CC0B122A3AB1DDDAF /* UIControl+RHSound.m in Sources */ = {isa = PBXBuildFile; fileRef = FB482E64CAA156319FB46EE90754573F /* UIControl+RHSound.m */; };
-		636F26AC2E8746E4B43B323A2E0F03D2 /* UIFont+RHFont.m in Sources */ = {isa = PBXBuildFile; fileRef = CD94FBBF3CA8E97C8C27008789678E62 /* UIFont+RHFont.m */; };
-		6CB081ABC0661710FA406199BCF97E9C /* UIImageView+RHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = F8639D0402D317E3AC61BAA766B324F7 /* UIImageView+RHAdd.m */; };
-		7A183DB818ADB22E634155E10F850627 /* UIView+RHTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = BCBCB2F7364223B50B0AD4DA9E691672 /* UIView+RHTransition.m */; };
+		4FB76ED258D85F4A0AD250CFD1F6EBC1 /* UIView+RHTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 8875B1768D4C36A3B17D0A59EABF8EED /* UIView+RHTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54CE93398A922CA24B9E2A7EA555C773 /* UIControl+FixMultiClick.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D9E7D52755358EB1D5AFC111798BC4 /* UIControl+FixMultiClick.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		552CB552EB5F9ACB3E6414D670A29F4F /* UIImageView+RHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C9F38ECAE33C5D3999436A5B34C82C /* UIImageView+RHAdd.m */; };
+		642E4E58772D6679F694FE8C6120A2DD /* UIImage+RHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CADA98E72FB6F39B051886AAFF86DA4 /* UIImage+RHImage.m */; };
+		653FDA9B3D0BED9BCC50B2F5B9067F2F /* UIView+RHBorders.m in Sources */ = {isa = PBXBuildFile; fileRef = 8849A590D86992684273AB37796D85FD /* UIView+RHBorders.m */; };
+		6922EDCCC5AE8D6F95DCFEA19430CC10 /* MXSUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63EB2DF85911D87FE5336241B729E6EF /* MXSUIKit-dummy.m */; };
+		76244E7AE44159D24DB9BB0BB3BFC685 /* UIView+RHAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF2AC5D6433FE9FA3DD47C4A21834E6 /* UIView+RHAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79D32F7F4F8BE191E409175D47FA5F5E /* UIView+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF9F33691CA504681A241A59B254DF9 /* UIView+Shadow.m */; };
+		7B95A900C1FBF44A1626F12D932F60D0 /* UIView+RHBorders.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E18AFBC7933BFD026004E152556A659 /* UIView+RHBorders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E1E3F095DD406B8B89AA8C1E1CB40B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		7FD7C284F431948B5EE1727D8906A6DD /* UIImageView+RHAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E1F3A6AA0BE2DCD63511570E6C46B18 /* UIImageView+RHAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8362AA1C278E6E90BE5908FB122ED69E /* Pods-MXSUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7983E458DBD861338EF14A1F8E0D4DF6 /* Pods-MXSUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89E84507EA052BD478E144E88D5ADC9C /* UIView+RHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A4170C82B4E275A39D5FDE539C3B84 /* UIView+RHAdd.m */; };
-		8DBF30590DFDBCECECD65E8EA4040D45 /* UIColor+RHColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C3049585E9F74C95923025B34851D8D /* UIColor+RHColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94DD766299F0E81F0E82AF35A9D7127B /* RHUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8092B0A92F608A7DA54FB8B62B4ED2AF /* RHUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9BAB40B5506DCC1D188ECFD2A96E270C /* UIView+RHAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 99DBD55BBB840D1E70681E11A54AB2E5 /* UIView+RHAnimation.m */; };
-		A506020FEDC5ED5995457CBEC97840DC /* MXSUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C57544C0D9AAFF05E7DE8DF2EEDC82 /* MXSUIKit-dummy.m */; };
-		AC4E70F343D7EB402CDA691AE2A4508A /* UIView+RHAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D77A1EA647719ACC7454AF97B2F2E8AC /* UIView+RHAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B0CF68083C2E219449AB3E137F0A3DEF /* UIView+RHGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 99AB9A1CFF9551D58D2D5F10AEE7C141 /* UIView+RHGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CE052C239A8AA765C33DCF58C533FCD3 /* UIView+RHTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = F342EF9E18D50328CC3D88E8AA5DE49C /* UIView+RHTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CF4E8C95F8068557E09778FBCDF30310 /* UIView+RHAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = EC9AC846363D7E8E1D1F6192A8A4B5E5 /* UIView+RHAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4189940100C6CDBAEBFBC8723BC9D74 /* UIView+RHGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = F54A85D550E17543481CE33E745862C5 /* UIView+RHGesture.m */; };
-		E5589AA7C4882E2AF93F62D47CB28FA1 /* UIControl+RHSound.h in Headers */ = {isa = PBXBuildFile; fileRef = 901D28120F2071030586B147B3161483 /* UIControl+RHSound.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F23DE8991B22F1222EFCE09B1A4CBD00 /* UIButton+RHButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D8E90F60AC6065F03055D2F5320937 /* UIButton+RHButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F7E967A0D7A034D1F67F9768B2BE1F11 /* UIColor+RHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A043D1C5DC2F938A29693112C60371D /* UIColor+RHColor.m */; };
+		8867D9AD6B8D926A9B28A79F5CEA0CE7 /* UIView+RHAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C4351AEEDD49A46359553628104AC376 /* UIView+RHAdd.m */; };
+		8B60B87CBE7BED9C616CDA547D38C179 /* UIBarButtonItem+RHBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 943EC4D510A8135ACEDFC91D2C183C29 /* UIBarButtonItem+RHBarItem.m */; };
+		8BCD938AC9FDF24E107161C178BBB02B /* MXSUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94A8792B2BD60BEA68D7AE4B2E50F0FE /* MXSUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		911C1F02C4CCA60DCC217124DCEA8F94 /* UIControl+FixMultiClick.m in Sources */ = {isa = PBXBuildFile; fileRef = 86432FEA825E45E26233C6279A324A8E /* UIControl+FixMultiClick.m */; };
+		94ACA33BE751A764B76F8CC317803A4E /* UIView+Shadow.h in Headers */ = {isa = PBXBuildFile; fileRef = B93F86A104F84DD8D324DEBE6A67BAA2 /* UIView+Shadow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AF900E8B13AFCB9154DE782586C35FD /* UIFont+RHFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 497980F19CD5A8641C3886E9911AEEFA /* UIFont+RHFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9BE5585F1DC79BD2CD94B80304D2CF40 /* UIColor+RHColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A852CBCE02DFAEC1436B98F6597F5 /* UIColor+RHColor.m */; };
+		9D84F69D9A24FF6642116DE7D3FB834C /* UIBarButtonItem+RHBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFF83078E32A63511A5A095B72F8641 /* UIBarButtonItem+RHBarItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8E435CE65EF256DCC26E023C427B4E7 /* UIView+RHAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B3A904D013B71D8CA5025DF57E361C /* UIView+RHAnimation.m */; };
+		B164DB858481F2C30B4570DF41516D53 /* UIControl+RHSound.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D09332BBA9F97167FE05E1025D068F8 /* UIControl+RHSound.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B47A662EA71B0A33D0A2A73C64F202F5 /* UIImage+RHImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 74F4CD32D9C9D0AF0B29D678C5FA6B0C /* UIImage+RHImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7FDA89D3457DBF171ECFCD31620E5E2 /* UIView+RectCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DF9B3FCC7B4E5F510B688029533D05 /* UIView+RectCorners.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B921B5F53D456365183802401D256E83 /* UIView+RectCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A46F59E3A63BDD47A6117BC344517E8 /* UIView+RectCorners.m */; };
+		BDBE97C3C03939E394B17021D74FC007 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		BF06AE18BF4A0BC5D348C96DC2BB59BA /* UIView+RHLine.m in Sources */ = {isa = PBXBuildFile; fileRef = E717AC57A1E50E87F5B13B830522D03F /* UIView+RHLine.m */; };
+		C634B3146972AB8CF38F52CD134CE9B6 /* UIFont+RHFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3929238118BF576AB9D9B9E1C71E6A5B /* UIFont+RHFont.m */; };
+		C97679213D23CE6314C9F5914B29D148 /* UIControl+RHSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 69416F07D71F520F22667EEE0BEB3B82 /* UIControl+RHSound.m */; };
+		CF79CA1FFE8512F755AE15AA1155F6FC /* UIButton+RHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAD70FAC4097D9AEEA67501B981E518 /* UIButton+RHButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,61 +70,69 @@
 
 /* Begin PBXFileReference section */
 		06B2649E7D26CCD7CF882530DB40EA4D /* Pods-MXSUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXSUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0E800E76E94F226561C952FD5740D3FA /* MXSUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MXSUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0B7A852CBCE02DFAEC1436B98F6597F5 /* UIColor+RHColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+RHColor.m"; path = "MXSUIKit/Classes/UIColor+RHColor.m"; sourceTree = "<group>"; };
+		0BF9F33691CA504681A241A59B254DF9 /* UIView+Shadow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Shadow.m"; path = "MXSUIKit/Classes/UIView+Shadow.m"; sourceTree = "<group>"; };
+		0E18AFBC7933BFD026004E152556A659 /* UIView+RHBorders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHBorders.h"; path = "MXSUIKit/Classes/UIView+RHBorders.h"; sourceTree = "<group>"; };
 		0F4EE2988D206A4A197A9DAE7785E2AD /* Pods_MXSUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MXSUIKit_Tests.framework; path = "Pods-MXSUIKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		164111C83585776A0613A16933F0A046 /* MXSUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXSUIKit.xcconfig; sourceTree = "<group>"; };
+		1BEDA883976D4F4DB8CCCABDB42670E0 /* MXSUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MXSUIKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1CD9DBF8958CD6548FE253F411E8284D /* Pods-MXSUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MXSUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		26C57544C0D9AAFF05E7DE8DF2EEDC82 /* MXSUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXSUIKit-dummy.m"; sourceTree = "<group>"; };
-		2BAFFA86B5F8BDE5435FD880D6F63657 /* UIControl+FixMultiClick.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+FixMultiClick.m"; path = "MXSUIKit/Classes/UIControl+FixMultiClick.m"; sourceTree = "<group>"; };
+		203F7485F1DA554F29BDC6450635C8B8 /* UIView+RHLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHLine.h"; path = "MXSUIKit/Classes/UIView+RHLine.h"; sourceTree = "<group>"; };
+		2B40207A46CE766A26D3276B70E09B4A /* UIColor+RHColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+RHColor.h"; path = "MXSUIKit/Classes/UIColor+RHColor.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3E1F3A6AA0BE2DCD63511570E6C46B18 /* UIImageView+RHAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RHAdd.h"; path = "MXSUIKit/Classes/UIImageView+RHAdd.h"; sourceTree = "<group>"; };
+		33C9F38ECAE33C5D3999436A5B34C82C /* UIImageView+RHAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RHAdd.m"; path = "MXSUIKit/Classes/UIImageView+RHAdd.m"; sourceTree = "<group>"; };
+		33D9E7D52755358EB1D5AFC111798BC4 /* UIControl+FixMultiClick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+FixMultiClick.h"; path = "MXSUIKit/Classes/UIControl+FixMultiClick.h"; sourceTree = "<group>"; };
+		35DF9B3FCC7B4E5F510B688029533D05 /* UIView+RectCorners.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RectCorners.h"; path = "MXSUIKit/Classes/UIView+RectCorners.h"; sourceTree = "<group>"; };
+		3929238118BF576AB9D9B9E1C71E6A5B /* UIFont+RHFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+RHFont.m"; path = "MXSUIKit/Classes/UIFont+RHFont.m"; sourceTree = "<group>"; };
 		441EA91153A5AF20ED2D73C16350A6C3 /* Pods-MXSUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MXSUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4737218509800CFAB973F7FE921E9F44 /* MXSUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MXSUIKit-Info.plist"; sourceTree = "<group>"; };
+		497980F19CD5A8641C3886E9911AEEFA /* UIFont+RHFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+RHFont.h"; path = "MXSUIKit/Classes/UIFont+RHFont.h"; sourceTree = "<group>"; };
 		4983E41B1F9DD406805205637D32BE9A /* Pods-MXSUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXSUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4C97BF3AC50DF2E7D52E1128655F0201 /* Pods-MXSUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXSUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		50765706B0ABCC853AF9CFFA79C71BD5 /* MXSUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MXSUIKit.framework; path = MXSUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C3049585E9F74C95923025B34851D8D /* UIColor+RHColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+RHColor.h"; path = "MXSUIKit/Classes/UIColor+RHColor.h"; sourceTree = "<group>"; };
+		52A25BEC27858E6D42F92EAE7303F527 /* UIView+RHAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHAnimation.h"; path = "MXSUIKit/Classes/UIView+RHAnimation.h"; sourceTree = "<group>"; };
+		5A249DCE2176BEEC386C3235D0E60000 /* MXSUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MXSUIKit.modulemap; sourceTree = "<group>"; };
 		61FF694D41C667836B8C0397CA09C6E0 /* Pods-MXSUIKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXSUIKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		6A043D1C5DC2F938A29693112C60371D /* UIColor+RHColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+RHColor.m"; path = "MXSUIKit/Classes/UIColor+RHColor.m"; sourceTree = "<group>"; };
-		6BEB0706AB53E831366FA18E7BA8D0B0 /* UIControl+FixMultiClick.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+FixMultiClick.h"; path = "MXSUIKit/Classes/UIControl+FixMultiClick.h"; sourceTree = "<group>"; };
+		63EB2DF85911D87FE5336241B729E6EF /* MXSUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MXSUIKit-dummy.m"; sourceTree = "<group>"; };
+		69416F07D71F520F22667EEE0BEB3B82 /* UIControl+RHSound.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+RHSound.m"; path = "MXSUIKit/Classes/UIControl+RHSound.m"; sourceTree = "<group>"; };
+		74F4CD32D9C9D0AF0B29D678C5FA6B0C /* UIImage+RHImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RHImage.h"; path = "MXSUIKit/Classes/UIImage+RHImage.h"; sourceTree = "<group>"; };
 		764021C2967DA84A94C6ADC38271CBFA /* Pods-MXSUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXSUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		7983E458DBD861338EF14A1F8E0D4DF6 /* Pods-MXSUIKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MXSUIKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7A0FBFF42A43E3C152B8566CAFF41896 /* Pods-MXSUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MXSUIKit_Example-dummy.m"; sourceTree = "<group>"; };
-		806CB271C757D9FF194E186CF17F19B1 /* UIBarButtonItem+RHBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+RHBarItem.h"; path = "MXSUIKit/Classes/UIBarButtonItem+RHBarItem.h"; sourceTree = "<group>"; };
-		8092B0A92F608A7DA54FB8B62B4ED2AF /* RHUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RHUIKit.h; path = MXSUIKit/Classes/RHUIKit.h; sourceTree = "<group>"; };
-		83A4170C82B4E275A39D5FDE539C3B84 /* UIView+RHAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHAdd.m"; path = "MXSUIKit/Classes/UIView+RHAdd.m"; sourceTree = "<group>"; };
+		7A46F59E3A63BDD47A6117BC344517E8 /* UIView+RectCorners.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RectCorners.m"; path = "MXSUIKit/Classes/UIView+RectCorners.m"; sourceTree = "<group>"; };
+		7BCD3E2576E653B98970201C8095AE76 /* MXSUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MXSUIKit.xcconfig; sourceTree = "<group>"; };
+		7D09332BBA9F97167FE05E1025D068F8 /* UIControl+RHSound.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RHSound.h"; path = "MXSUIKit/Classes/UIControl+RHSound.h"; sourceTree = "<group>"; };
+		86432FEA825E45E26233C6279A324A8E /* UIControl+FixMultiClick.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+FixMultiClick.m"; path = "MXSUIKit/Classes/UIControl+FixMultiClick.m"; sourceTree = "<group>"; };
+		87FA22609D32361DF5292E25D370A615 /* UIView+RHGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHGesture.h"; path = "MXSUIKit/Classes/UIView+RHGesture.h"; sourceTree = "<group>"; };
+		8849A590D86992684273AB37796D85FD /* UIView+RHBorders.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHBorders.m"; path = "MXSUIKit/Classes/UIView+RHBorders.m"; sourceTree = "<group>"; };
+		8875B1768D4C36A3B17D0A59EABF8EED /* UIView+RHTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHTransition.h"; path = "MXSUIKit/Classes/UIView+RHTransition.h"; sourceTree = "<group>"; };
 		8AF7285480C5F3B2D19B921B38433BC8 /* Pods-MXSUIKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXSUIKit_Example-Info.plist"; sourceTree = "<group>"; };
 		8C991124553F2BCB4B5510A2B071A1D1 /* Pods-MXSUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MXSUIKit_Example.modulemap"; sourceTree = "<group>"; };
-		901D28120F2071030586B147B3161483 /* UIControl+RHSound.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+RHSound.h"; path = "MXSUIKit/Classes/UIControl+RHSound.h"; sourceTree = "<group>"; };
+		943EC4D510A8135ACEDFC91D2C183C29 /* UIBarButtonItem+RHBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+RHBarItem.m"; path = "MXSUIKit/Classes/UIBarButtonItem+RHBarItem.m"; sourceTree = "<group>"; };
+		94A8792B2BD60BEA68D7AE4B2E50F0FE /* MXSUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXSUIKit-umbrella.h"; sourceTree = "<group>"; };
 		995B8BE13E98E031124406501B01DF95 /* Pods-MXSUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MXSUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		99AB9A1CFF9551D58D2D5F10AEE7C141 /* UIView+RHGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHGesture.h"; path = "MXSUIKit/Classes/UIView+RHGesture.h"; sourceTree = "<group>"; };
-		99DBD55BBB840D1E70681E11A54AB2E5 /* UIView+RHAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHAnimation.m"; path = "MXSUIKit/Classes/UIView+RHAnimation.m"; sourceTree = "<group>"; };
+		9CADA98E72FB6F39B051886AAFF86DA4 /* UIImage+RHImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RHImage.m"; path = "MXSUIKit/Classes/UIImage+RHImage.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0B610B81C0DE7A2BA3484F8272372B4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		AAFCD3E570E29140C6E1868FA97D6728 /* Pods-MXSUIKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MXSUIKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B14ECA627A6680EF20931B12A4B3A418 /* Pods-MXSUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MXSUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		B7BE0000432AFE4879EAC7D0CF7080CA /* Pods-MXSUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MXSUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		B8F697E784DD637D96CCEBEFE80404A2 /* UIBarButtonItem+RHBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+RHBarItem.m"; path = "MXSUIKit/Classes/UIBarButtonItem+RHBarItem.m"; sourceTree = "<group>"; };
-		BB2853FD36F54226179E84DF7CDEA83D /* MXSUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXSUIKit-prefix.pch"; sourceTree = "<group>"; };
-		BC70AE6F39CFE5F5EC76BD17CB403AF4 /* UIImage+RHImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+RHImage.h"; path = "MXSUIKit/Classes/UIImage+RHImage.h"; sourceTree = "<group>"; };
-		BCBCB2F7364223B50B0AD4DA9E691672 /* UIView+RHTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHTransition.m"; path = "MXSUIKit/Classes/UIView+RHTransition.m"; sourceTree = "<group>"; };
-		C3D8E90F60AC6065F03055D2F5320937 /* UIButton+RHButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+RHButton.h"; path = "MXSUIKit/Classes/UIButton+RHButton.h"; sourceTree = "<group>"; };
+		B93F86A104F84DD8D324DEBE6A67BAA2 /* UIView+Shadow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Shadow.h"; path = "MXSUIKit/Classes/UIView+Shadow.h"; sourceTree = "<group>"; };
+		BCF6BD29EB117245DE79BA1AD753A2D5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BE92DA8A98937DC3622737D9AA4E5EF0 /* UIImageView+RHAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RHAdd.h"; path = "MXSUIKit/Classes/UIImageView+RHAdd.h"; sourceTree = "<group>"; };
 		C3F13BA1F8CE8AE3C29B95E3291EB090 /* Pods_MXSUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MXSUIKit_Example.framework; path = "Pods-MXSUIKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6EBFB417DFA6BB0302CC158D389947D /* UIImage+RHImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+RHImage.m"; path = "MXSUIKit/Classes/UIImage+RHImage.m"; sourceTree = "<group>"; };
-		C7A0E547822001226C228248C1C304E6 /* UIButton+RHButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RHButton.m"; path = "MXSUIKit/Classes/UIButton+RHButton.m"; sourceTree = "<group>"; };
-		CD94FBBF3CA8E97C8C27008789678E62 /* UIFont+RHFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+RHFont.m"; path = "MXSUIKit/Classes/UIFont+RHFont.m"; sourceTree = "<group>"; };
+		C4351AEEDD49A46359553628104AC376 /* UIView+RHAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHAdd.m"; path = "MXSUIKit/Classes/UIView+RHAdd.m"; sourceTree = "<group>"; };
+		C5D9C6D26BA551BD65401636FCF7CCA2 /* UIView+RHTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHTransition.m"; path = "MXSUIKit/Classes/UIView+RHTransition.m"; sourceTree = "<group>"; };
+		C8B3A904D013B71D8CA5025DF57E361C /* UIView+RHAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHAnimation.m"; path = "MXSUIKit/Classes/UIView+RHAnimation.m"; sourceTree = "<group>"; };
+		CDFF83078E32A63511A5A095B72F8641 /* UIBarButtonItem+RHBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+RHBarItem.h"; path = "MXSUIKit/Classes/UIBarButtonItem+RHBarItem.h"; sourceTree = "<group>"; };
 		D1197029DC93B1E10A9821EE99DE6858 /* Pods-MXSUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MXSUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D30484A789497B5A5835DC435156A051 /* UIFont+RHFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+RHFont.h"; path = "MXSUIKit/Classes/UIFont+RHFont.h"; sourceTree = "<group>"; };
-		D3E2E6975811491B21826893394851D2 /* MXSUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXSUIKit-umbrella.h"; sourceTree = "<group>"; };
-		D77A1EA647719ACC7454AF97B2F2E8AC /* UIView+RHAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHAdd.h"; path = "MXSUIKit/Classes/UIView+RHAdd.h"; sourceTree = "<group>"; };
+		D11986FBAD4768C916A6520157F48A18 /* MXSUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MXSUIKit-prefix.pch"; sourceTree = "<group>"; };
+		D201A63ABC7A2E09B892BCC213179D6E /* UIView+RHGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHGesture.m"; path = "MXSUIKit/Classes/UIView+RHGesture.m"; sourceTree = "<group>"; };
+		DCAD70FAC4097D9AEEA67501B981E518 /* UIButton+RHButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+RHButton.m"; path = "MXSUIKit/Classes/UIButton+RHButton.m"; sourceTree = "<group>"; };
+		DF52D38E34A4EBEF9A0C4DF69B7E7482 /* UIButton+RHButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+RHButton.h"; path = "MXSUIKit/Classes/UIButton+RHButton.h"; sourceTree = "<group>"; };
+		E68D62E0F4379191098C3603BE60A889 /* RHUIKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RHUIKit.h; path = MXSUIKit/Classes/RHUIKit.h; sourceTree = "<group>"; };
+		E717AC57A1E50E87F5B13B830522D03F /* UIView+RHLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHLine.m"; path = "MXSUIKit/Classes/UIView+RHLine.m"; sourceTree = "<group>"; };
+		E99C32E572FFF0C98CEEC9F84E9A28D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		EC94E7264BF40AF55F82E8A89D2F4684 /* Pods-MXSUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MXSUIKit_Tests.modulemap"; sourceTree = "<group>"; };
-		EC9AC846363D7E8E1D1F6192A8A4B5E5 /* UIView+RHAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHAnimation.h"; path = "MXSUIKit/Classes/UIView+RHAnimation.h"; sourceTree = "<group>"; };
-		ED1B6736B392014185930C39DD9B1536 /* MXSUIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MXSUIKit-Info.plist"; sourceTree = "<group>"; };
-		F2AEE10BE92D2F2D5AD1885D4587506A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		F342EF9E18D50328CC3D88E8AA5DE49C /* UIView+RHTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHTransition.h"; path = "MXSUIKit/Classes/UIView+RHTransition.h"; sourceTree = "<group>"; };
-		F54A85D550E17543481CE33E745862C5 /* UIView+RHGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+RHGesture.m"; path = "MXSUIKit/Classes/UIView+RHGesture.m"; sourceTree = "<group>"; };
-		F6787FA715FEE6492A0540E530E86E4A /* MXSUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MXSUIKit.modulemap; sourceTree = "<group>"; };
-		F8639D0402D317E3AC61BAA766B324F7 /* UIImageView+RHAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RHAdd.m"; path = "MXSUIKit/Classes/UIImageView+RHAdd.m"; sourceTree = "<group>"; };
-		FB482E64CAA156319FB46EE90754573F /* UIControl+RHSound.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+RHSound.m"; path = "MXSUIKit/Classes/UIControl+RHSound.m"; sourceTree = "<group>"; };
+		EEF2AC5D6433FE9FA3DD47C4A21834E6 /* UIView+RHAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+RHAdd.h"; path = "MXSUIKit/Classes/UIView+RHAdd.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +144,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B31D6FA68BCD6B09C92FD052E2C7C6D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDBE97C3C03939E394B17021D74FC007 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BF3334C097A8BC539897B02E93C49DE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,17 +160,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED81E635044F1CD2A34D9D824B985550 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0B771CE24CE3506C49ADB4E23F5BB21A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EA30E05FB7CD506C365660BB9745EA9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E99C32E572FFF0C98CEEC9F84E9A28D2 /* LICENSE */,
+				1BEDA883976D4F4DB8CCCABDB42670E0 /* MXSUIKit.podspec */,
+				BCF6BD29EB117245DE79BA1AD753A2D5 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		42E99DF907FBC97F512C87D0DAC945AB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,71 +183,55 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		766AAB90DC6CDFEB59AEB7AB7FA7845C /* MXSUIKit */ = {
+		8275F13DF9C40359941AC1286713DEA4 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8092B0A92F608A7DA54FB8B62B4ED2AF /* RHUIKit.h */,
-				806CB271C757D9FF194E186CF17F19B1 /* UIBarButtonItem+RHBarItem.h */,
-				B8F697E784DD637D96CCEBEFE80404A2 /* UIBarButtonItem+RHBarItem.m */,
-				C3D8E90F60AC6065F03055D2F5320937 /* UIButton+RHButton.h */,
-				C7A0E547822001226C228248C1C304E6 /* UIButton+RHButton.m */,
-				5C3049585E9F74C95923025B34851D8D /* UIColor+RHColor.h */,
-				6A043D1C5DC2F938A29693112C60371D /* UIColor+RHColor.m */,
-				6BEB0706AB53E831366FA18E7BA8D0B0 /* UIControl+FixMultiClick.h */,
-				2BAFFA86B5F8BDE5435FD880D6F63657 /* UIControl+FixMultiClick.m */,
-				901D28120F2071030586B147B3161483 /* UIControl+RHSound.h */,
-				FB482E64CAA156319FB46EE90754573F /* UIControl+RHSound.m */,
-				D30484A789497B5A5835DC435156A051 /* UIFont+RHFont.h */,
-				CD94FBBF3CA8E97C8C27008789678E62 /* UIFont+RHFont.m */,
-				BC70AE6F39CFE5F5EC76BD17CB403AF4 /* UIImage+RHImage.h */,
-				C6EBFB417DFA6BB0302CC158D389947D /* UIImage+RHImage.m */,
-				3E1F3A6AA0BE2DCD63511570E6C46B18 /* UIImageView+RHAdd.h */,
-				F8639D0402D317E3AC61BAA766B324F7 /* UIImageView+RHAdd.m */,
-				D77A1EA647719ACC7454AF97B2F2E8AC /* UIView+RHAdd.h */,
-				83A4170C82B4E275A39D5FDE539C3B84 /* UIView+RHAdd.m */,
-				EC9AC846363D7E8E1D1F6192A8A4B5E5 /* UIView+RHAnimation.h */,
-				99DBD55BBB840D1E70681E11A54AB2E5 /* UIView+RHAnimation.m */,
-				99AB9A1CFF9551D58D2D5F10AEE7C141 /* UIView+RHGesture.h */,
-				F54A85D550E17543481CE33E745862C5 /* UIView+RHGesture.m */,
-				F342EF9E18D50328CC3D88E8AA5DE49C /* UIView+RHTransition.h */,
-				BCBCB2F7364223B50B0AD4DA9E691672 /* UIView+RHTransition.m */,
-				97A0DFD3A5FA8974632AA22A05B78FD6 /* Pod */,
-				A7F1A1F1F75BF2CD2BE98E6936C7D403 /* Support Files */,
-			);
-			name = MXSUIKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		97A0DFD3A5FA8974632AA22A05B78FD6 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A0B610B81C0DE7A2BA3484F8272372B4 /* LICENSE */,
-				0E800E76E94F226561C952FD5740D3FA /* MXSUIKit.podspec */,
-				F2AEE10BE92D2F2D5AD1885D4587506A /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		A7DBB4F1C2B9684CEC184B6B22EDF5F4 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				766AAB90DC6CDFEB59AEB7AB7FA7845C /* MXSUIKit */,
+				8E65C642BEE47FE95523CC16F5F61769 /* MXSUIKit */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		A7F1A1F1F75BF2CD2BE98E6936C7D403 /* Support Files */ = {
+		8E65C642BEE47FE95523CC16F5F61769 /* MXSUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				F6787FA715FEE6492A0540E530E86E4A /* MXSUIKit.modulemap */,
-				164111C83585776A0613A16933F0A046 /* MXSUIKit.xcconfig */,
-				26C57544C0D9AAFF05E7DE8DF2EEDC82 /* MXSUIKit-dummy.m */,
-				ED1B6736B392014185930C39DD9B1536 /* MXSUIKit-Info.plist */,
-				BB2853FD36F54226179E84DF7CDEA83D /* MXSUIKit-prefix.pch */,
-				D3E2E6975811491B21826893394851D2 /* MXSUIKit-umbrella.h */,
+				E68D62E0F4379191098C3603BE60A889 /* RHUIKit.h */,
+				CDFF83078E32A63511A5A095B72F8641 /* UIBarButtonItem+RHBarItem.h */,
+				943EC4D510A8135ACEDFC91D2C183C29 /* UIBarButtonItem+RHBarItem.m */,
+				DF52D38E34A4EBEF9A0C4DF69B7E7482 /* UIButton+RHButton.h */,
+				DCAD70FAC4097D9AEEA67501B981E518 /* UIButton+RHButton.m */,
+				2B40207A46CE766A26D3276B70E09B4A /* UIColor+RHColor.h */,
+				0B7A852CBCE02DFAEC1436B98F6597F5 /* UIColor+RHColor.m */,
+				33D9E7D52755358EB1D5AFC111798BC4 /* UIControl+FixMultiClick.h */,
+				86432FEA825E45E26233C6279A324A8E /* UIControl+FixMultiClick.m */,
+				7D09332BBA9F97167FE05E1025D068F8 /* UIControl+RHSound.h */,
+				69416F07D71F520F22667EEE0BEB3B82 /* UIControl+RHSound.m */,
+				497980F19CD5A8641C3886E9911AEEFA /* UIFont+RHFont.h */,
+				3929238118BF576AB9D9B9E1C71E6A5B /* UIFont+RHFont.m */,
+				74F4CD32D9C9D0AF0B29D678C5FA6B0C /* UIImage+RHImage.h */,
+				9CADA98E72FB6F39B051886AAFF86DA4 /* UIImage+RHImage.m */,
+				BE92DA8A98937DC3622737D9AA4E5EF0 /* UIImageView+RHAdd.h */,
+				33C9F38ECAE33C5D3999436A5B34C82C /* UIImageView+RHAdd.m */,
+				35DF9B3FCC7B4E5F510B688029533D05 /* UIView+RectCorners.h */,
+				7A46F59E3A63BDD47A6117BC344517E8 /* UIView+RectCorners.m */,
+				EEF2AC5D6433FE9FA3DD47C4A21834E6 /* UIView+RHAdd.h */,
+				C4351AEEDD49A46359553628104AC376 /* UIView+RHAdd.m */,
+				52A25BEC27858E6D42F92EAE7303F527 /* UIView+RHAnimation.h */,
+				C8B3A904D013B71D8CA5025DF57E361C /* UIView+RHAnimation.m */,
+				0E18AFBC7933BFD026004E152556A659 /* UIView+RHBorders.h */,
+				8849A590D86992684273AB37796D85FD /* UIView+RHBorders.m */,
+				87FA22609D32361DF5292E25D370A615 /* UIView+RHGesture.h */,
+				D201A63ABC7A2E09B892BCC213179D6E /* UIView+RHGesture.m */,
+				203F7485F1DA554F29BDC6450635C8B8 /* UIView+RHLine.h */,
+				E717AC57A1E50E87F5B13B830522D03F /* UIView+RHLine.m */,
+				8875B1768D4C36A3B17D0A59EABF8EED /* UIView+RHTransition.h */,
+				C5D9C6D26BA551BD65401636FCF7CCA2 /* UIView+RHTransition.m */,
+				B93F86A104F84DD8D324DEBE6A67BAA2 /* UIView+Shadow.h */,
+				0BF9F33691CA504681A241A59B254DF9 /* UIView+Shadow.m */,
+				2EA30E05FB7CD506C365660BB9745EA9 /* Pod */,
+				D088EF22A13C6125036035CF76DB8996 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MXSUIKit";
+			name = MXSUIKit;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B48102C202D260B74908ABC7E9961E60 /* Targets Support Files */ = {
@@ -261,11 +271,25 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				A7DBB4F1C2B9684CEC184B6B22EDF5F4 /* Development Pods */,
+				8275F13DF9C40359941AC1286713DEA4 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				42E99DF907FBC97F512C87D0DAC945AB /* Products */,
 				B48102C202D260B74908ABC7E9961E60 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D088EF22A13C6125036035CF76DB8996 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5A249DCE2176BEEC386C3235D0E60000 /* MXSUIKit.modulemap */,
+				7BCD3E2576E653B98970201C8095AE76 /* MXSUIKit.xcconfig */,
+				63EB2DF85911D87FE5336241B729E6EF /* MXSUIKit-dummy.m */,
+				4737218509800CFAB973F7FE921E9F44 /* MXSUIKit-Info.plist */,
+				D11986FBAD4768C916A6520157F48A18 /* MXSUIKit-prefix.pch */,
+				94A8792B2BD60BEA68D7AE4B2E50F0FE /* MXSUIKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MXSUIKit";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -296,24 +320,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		714A82328FC58FC357106423C502B08C /* Headers */ = {
+		18A45825A69C30F735556A32E9D563A4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D0BE788523A859BD943E5EF52A462AA /* MXSUIKit-umbrella.h in Headers */,
-				94DD766299F0E81F0E82AF35A9D7127B /* RHUIKit.h in Headers */,
-				0AB05A903686E0B8FDF562858D0FF858 /* UIBarButtonItem+RHBarItem.h in Headers */,
-				F23DE8991B22F1222EFCE09B1A4CBD00 /* UIButton+RHButton.h in Headers */,
-				8DBF30590DFDBCECECD65E8EA4040D45 /* UIColor+RHColor.h in Headers */,
-				46A94DB715C0C8A84DEE3D842DCBCA40 /* UIControl+FixMultiClick.h in Headers */,
-				E5589AA7C4882E2AF93F62D47CB28FA1 /* UIControl+RHSound.h in Headers */,
-				2079772C624110BB8AF9187CD8DAD6BC /* UIFont+RHFont.h in Headers */,
-				086015F9089B895BD91E44CDE8E2A39C /* UIImage+RHImage.h in Headers */,
-				7FD7C284F431948B5EE1727D8906A6DD /* UIImageView+RHAdd.h in Headers */,
-				AC4E70F343D7EB402CDA691AE2A4508A /* UIView+RHAdd.h in Headers */,
-				CF4E8C95F8068557E09778FBCDF30310 /* UIView+RHAnimation.h in Headers */,
-				B0CF68083C2E219449AB3E137F0A3DEF /* UIView+RHGesture.h in Headers */,
-				CE052C239A8AA765C33DCF58C533FCD3 /* UIView+RHTransition.h in Headers */,
+				8BCD938AC9FDF24E107161C178BBB02B /* MXSUIKit-umbrella.h in Headers */,
+				06877F48C0D7DCD0F8446FD3D81FABC8 /* RHUIKit.h in Headers */,
+				9D84F69D9A24FF6642116DE7D3FB834C /* UIBarButtonItem+RHBarItem.h in Headers */,
+				0A110832F07CE7AB4E23FD325F66D527 /* UIButton+RHButton.h in Headers */,
+				2837B290C18CD139E57EAA5AB111FFEE /* UIColor+RHColor.h in Headers */,
+				54CE93398A922CA24B9E2A7EA555C773 /* UIControl+FixMultiClick.h in Headers */,
+				B164DB858481F2C30B4570DF41516D53 /* UIControl+RHSound.h in Headers */,
+				9AF900E8B13AFCB9154DE782586C35FD /* UIFont+RHFont.h in Headers */,
+				B47A662EA71B0A33D0A2A73C64F202F5 /* UIImage+RHImage.h in Headers */,
+				239E6FD35365D0287C9B6B63F628061F /* UIImageView+RHAdd.h in Headers */,
+				B7FDA89D3457DBF171ECFCD31620E5E2 /* UIView+RectCorners.h in Headers */,
+				76244E7AE44159D24DB9BB0BB3BFC685 /* UIView+RHAdd.h in Headers */,
+				121B9620474931EAB25F09F8D23748E7 /* UIView+RHAnimation.h in Headers */,
+				7B95A900C1FBF44A1626F12D932F60D0 /* UIView+RHBorders.h in Headers */,
+				1F30EA89B0F77CBEDEE1B2148FF6AA0F /* UIView+RHGesture.h in Headers */,
+				2C5F062A15652417C5E6CB1E294CD366 /* UIView+RHLine.h in Headers */,
+				4FB76ED258D85F4A0AD250CFD1F6EBC1 /* UIView+RHTransition.h in Headers */,
+				94ACA33BE751A764B76F8CC317803A4E /* UIView+Shadow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,12 +385,12 @@
 		};
 		6DC4EBCE7F0E4F965FD633FDD17F8AC8 /* MXSUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBD7B0705A96756719938A2AFED71271 /* Build configuration list for PBXNativeTarget "MXSUIKit" */;
+			buildConfigurationList = DCB13264886B1E39F5E39C5144E8BEC4 /* Build configuration list for PBXNativeTarget "MXSUIKit" */;
 			buildPhases = (
-				714A82328FC58FC357106423C502B08C /* Headers */,
-				7C0E5E0D8823E30232A4101DAD890CCB /* Sources */,
-				ED81E635044F1CD2A34D9D824B985550 /* Frameworks */,
-				4B858E52D721D26ADD7030E51B48808E /* Resources */,
+				18A45825A69C30F735556A32E9D563A4 /* Headers */,
+				7DCDBB2287A9EF5DDF0F9FDB610EEF5D /* Sources */,
+				B31D6FA68BCD6B09C92FD052E2C7C6D6 /* Frameworks */,
+				31BB7EEA5DCDD619B103A0A214E4DF3D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -421,14 +449,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3ABB1677AC3C987FD088FFCA0BDC9F00 /* Resources */ = {
+		31BB7EEA5DCDD619B103A0A214E4DF3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B858E52D721D26ADD7030E51B48808E /* Resources */ = {
+		3ABB1677AC3C987FD088FFCA0BDC9F00 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,23 +481,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7C0E5E0D8823E30232A4101DAD890CCB /* Sources */ = {
+		7DCDBB2287A9EF5DDF0F9FDB610EEF5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A506020FEDC5ED5995457CBEC97840DC /* MXSUIKit-dummy.m in Sources */,
-				143E1AE1B460E58AD38650F3C3B190F0 /* UIBarButtonItem+RHBarItem.m in Sources */,
-				0F5F2C2C28182F0FCA84F524A214C4A0 /* UIButton+RHButton.m in Sources */,
-				F7E967A0D7A034D1F67F9768B2BE1F11 /* UIColor+RHColor.m in Sources */,
-				14A4D410F90855909CE956C5D6A01B8A /* UIControl+FixMultiClick.m in Sources */,
-				5318898B70C4FE9CC0B122A3AB1DDDAF /* UIControl+RHSound.m in Sources */,
-				636F26AC2E8746E4B43B323A2E0F03D2 /* UIFont+RHFont.m in Sources */,
-				00093B53CBE0B155F42002F82FDD6D4F /* UIImage+RHImage.m in Sources */,
-				6CB081ABC0661710FA406199BCF97E9C /* UIImageView+RHAdd.m in Sources */,
-				89E84507EA052BD478E144E88D5ADC9C /* UIView+RHAdd.m in Sources */,
-				9BAB40B5506DCC1D188ECFD2A96E270C /* UIView+RHAnimation.m in Sources */,
-				D4189940100C6CDBAEBFBC8723BC9D74 /* UIView+RHGesture.m in Sources */,
-				7A183DB818ADB22E634155E10F850627 /* UIView+RHTransition.m in Sources */,
+				6922EDCCC5AE8D6F95DCFEA19430CC10 /* MXSUIKit-dummy.m in Sources */,
+				8B60B87CBE7BED9C616CDA547D38C179 /* UIBarButtonItem+RHBarItem.m in Sources */,
+				CF79CA1FFE8512F755AE15AA1155F6FC /* UIButton+RHButton.m in Sources */,
+				9BE5585F1DC79BD2CD94B80304D2CF40 /* UIColor+RHColor.m in Sources */,
+				911C1F02C4CCA60DCC217124DCEA8F94 /* UIControl+FixMultiClick.m in Sources */,
+				C97679213D23CE6314C9F5914B29D148 /* UIControl+RHSound.m in Sources */,
+				C634B3146972AB8CF38F52CD134CE9B6 /* UIFont+RHFont.m in Sources */,
+				642E4E58772D6679F694FE8C6120A2DD /* UIImage+RHImage.m in Sources */,
+				552CB552EB5F9ACB3E6414D670A29F4F /* UIImageView+RHAdd.m in Sources */,
+				B921B5F53D456365183802401D256E83 /* UIView+RectCorners.m in Sources */,
+				8867D9AD6B8D926A9B28A79F5CEA0CE7 /* UIView+RHAdd.m in Sources */,
+				A8E435CE65EF256DCC26E023C427B4E7 /* UIView+RHAnimation.m in Sources */,
+				653FDA9B3D0BED9BCC50B2F5B9067F2F /* UIView+RHBorders.m in Sources */,
+				0E7AD9B766D65B6387F2A4072BE90864 /* UIView+RHGesture.m in Sources */,
+				BF06AE18BF4A0BC5D348C96DC2BB59BA /* UIView+RHLine.m in Sources */,
+				195D681F99F873460A1F172D2BEE5C65 /* UIView+RHTransition.m in Sources */,
+				79D32F7F4F8BE191E409175D47FA5F5E /* UIView+Shadow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +564,38 @@
 			};
 			name = Debug;
 		};
+		211BCFB7CFCEB8FB175EC29D7A3991B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BCD3E2576E653B98970201C8095AE76 /* MXSUIKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MXSUIKit/MXSUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXSUIKit/MXSUIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MXSUIKit/MXSUIKit.modulemap";
+				PRODUCT_MODULE_NAME = MXSUIKit;
+				PRODUCT_NAME = MXSUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2137EE7AFD8F46B58C1B9D67DC8272F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 06B2649E7D26CCD7CF882530DB40EA4D /* Pods-MXSUIKit_Tests.debug.xcconfig */;
@@ -564,69 +628,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		264640A4F867AFE2CA35AFA97C526B0C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 164111C83585776A0613A16933F0A046 /* MXSUIKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MXSUIKit/MXSUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MXSUIKit/MXSUIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MXSUIKit/MXSUIKit.modulemap";
-				PRODUCT_MODULE_NAME = MXSUIKit;
-				PRODUCT_NAME = MXSUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		38F14F3FF6C77A11EC9A657E7387AF6B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 164111C83585776A0613A16933F0A046 /* MXSUIKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MXSUIKit/MXSUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MXSUIKit/MXSUIKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MXSUIKit/MXSUIKit.modulemap";
-				PRODUCT_MODULE_NAME = MXSUIKit;
-				PRODUCT_NAME = MXSUIKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		399E8F43AB211A845ABDB1457DD33A33 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -721,6 +722,37 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
+		};
+		5015E3453694BD7FD159A7549A185E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BCD3E2576E653B98970201C8095AE76 /* MXSUIKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MXSUIKit/MXSUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MXSUIKit/MXSUIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MXSUIKit/MXSUIKit.modulemap";
+				PRODUCT_MODULE_NAME = MXSUIKit;
+				PRODUCT_NAME = MXSUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -850,11 +882,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBD7B0705A96756719938A2AFED71271 /* Build configuration list for PBXNativeTarget "MXSUIKit" */ = {
+		DCB13264886B1E39F5E39C5144E8BEC4 /* Build configuration list for PBXNativeTarget "MXSUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				264640A4F867AFE2CA35AFA97C526B0C /* Debug */,
-				38F14F3FF6C77A11EC9A657E7387AF6B /* Release */,
+				5015E3453694BD7FD159A7549A185E2E /* Debug */,
+				211BCFB7CFCEB8FB175EC29D7A3991B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,5 +1,5 @@
 PODS:
-  - MXSUIKit (1.0.0)
+  - MXSUIKit (1.0.2)
 
 DEPENDENCIES:
   - MXSUIKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MXSUIKit: f897c6a4730947a20cbbcce1ee596e3051847ff0
+  MXSUIKit: 6d7b54a58706cc6190dfdbcf822f904973c8af7c
 
 PODFILE CHECKSUM: 845dfcd816faa18b17a6a8aa0d6d9e9c24337170
 

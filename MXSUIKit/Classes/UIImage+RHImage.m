@@ -79,6 +79,149 @@
     });
 }
 
+#pragma mark - 合并图片
++ (UIImage *)mergeWithImage1:(UIImage*)image1 image2:(UIImage *)image2 frame1:(CGRect)frame1 frame2:(CGRect)frame2 size:(CGSize)size{
+    UIGraphicsBeginImageContext(size);
+    [image1 drawInRect:frame1 blendMode:kCGBlendModeLuminosity alpha:1.0];
+    [image2 drawInRect:frame2 blendMode:kCGBlendModeLuminosity alpha:0.2];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
++ (UIImage*) maskImage:(UIImage *)image withMask:(UIImage *)mask{
+    CGImageRef imgRef = [image CGImage];
+    CGImageRef maskRef = [mask CGImage];
+    CGImageRef actualMask = CGImageMaskCreate(CGImageGetWidth(maskRef),
+                                              CGImageGetHeight(maskRef),
+                                              CGImageGetBitsPerComponent(maskRef),
+                                              CGImageGetBitsPerPixel(maskRef),
+                                              CGImageGetBytesPerRow(maskRef),
+                                              CGImageGetDataProvider(maskRef), NULL, true);
+    CGImageRef masked = CGImageCreateWithMask(imgRef, actualMask);
+    UIImage *resultImg = [UIImage imageWithCGImage:masked];
+    CGImageRelease(actualMask);
+    CGImageRelease(masked);
+    
+    return resultImg;
+}
+
+#pragma mark - 打水印
+
+// 打水印
++ (UIImage *)waterImageWithBg:(UIImage *)bg logo:(UIImage *)logo
+{
+    // 1.创建一个基于位图的上下文(开启一个基于位图的上下文)
+    UIGraphicsBeginImageContextWithOptions(bg.size, NO, 0.0);
+    
+    // 2.画背景
+    [bg drawInRect:CGRectMake(0, 0, bg.size.width, bg.size.height)];
+    
+    // 3.画右下角的水印
+    CGFloat scale = 0.2;
+    CGFloat margin = 5;
+    CGFloat waterW = logo.size.width * scale;
+    CGFloat waterH = logo.size.height * scale;
+    CGFloat waterX = bg.size.width - waterW - margin;
+    CGFloat waterY = bg.size.height - waterH - margin;
+    [logo drawInRect:CGRectMake(waterX, waterY, waterW, waterH)];
+    
+    // 4.从上下文中取得制作完毕的UIImage对象
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    // 5.结束上下文
+    UIGraphicsEndImageContext();
+    
+    return newImage;
+}
+
+/**
+ *  给图片加文字水印
+ *
+ *  @param str     水印文字
+ *  @param strRect 文字所在的位置大小
+ *  @param attri   文字的相关属性，自行设置
+ *
+ *  @return 加完水印文字的图片
+ */
+- (UIImage *)imageWaterMarkWithString:(NSString*)str rect:(CGRect)strRect attribute:(NSDictionary *)attri {
+    return [self imageWaterMarkOptionsWithString:str rect:strRect attribute:attri image:nil imageRect:CGRectZero alpha:0];
+}
+
+/**
+ 给图片加文字水印
+ 
+ @param str 水印文字
+ @param point 文字所在的位置
+ @param attri 文字的相关属性，自行设置
+ @return 加完水印文字的图片
+ */
+- (UIImage *)imageWaterMarkWithString:(NSString*)str point:(CGPoint)point attribute:(NSDictionary *)attri {
+    return [self imageWaterMarkWithString:str point:point attribute:attri image:nil imagePoint:CGPointZero alpha:0];
+}
+
+/**
+ 给图片加文字水印
+ 
+ @param str 水印文字
+ @param point 文字所在的位置
+ @param attri 文字的相关属性，自行设置
+ @return 加完水印文字的图片
+ */
+- (UIImage *)imageWaterMarkWithAttributedString:(NSAttributedString *)str point:(CGPoint)point {
+    return [self imageWaterMarkWithAttributedString:str point:point image:nil imagePoint:CGPointZero alpha:0];
+}
+
+- (UIImage *)imageWaterMarkOptionsWithString:(NSString*)str rect:(CGRect)strRect attribute:(NSDictionary *)attri image:(UIImage *)image imageRect:(CGRect)imgRect alpha:(CGFloat)alpha {
+    //UIGraphicsBeginImageContext(self.size);iPhone4
+    // 下面方法，第一个参数表示区域大小。第二个参数表示是否是非透明的。如果需要显示半透明效果，需要传NO，否则传YES。第三个参数就是屏幕密度了
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, [UIScreen mainScreen].scale);
+    [self drawInRect:CGRectMake(0, 0, self.size.width, self.size.height) blendMode:kCGBlendModeNormal alpha:1.0];
+    if (image) {
+        [image drawInRect:imgRect blendMode:kCGBlendModeNormal alpha:alpha];
+    }
+    
+    if (str) {
+        [str drawInRect:strRect withAttributes:attri];
+    }
+    UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resultImage;
+}
+
+- (UIImage *)imageWaterMarkWithString:(NSString*)str point:(CGPoint)strPoint attribute:(NSDictionary*)attri image:(UIImage*)image imagePoint:(CGPoint)imgPoint alpha:(CGFloat)alpha {
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, [UIScreen mainScreen].scale);
+    [self drawAtPoint:CGPointMake(0, 0) blendMode:kCGBlendModeNormal alpha:1.0];
+    if (image) {
+        [image drawAtPoint:imgPoint blendMode:kCGBlendModeNormal alpha:alpha];
+    }
+    
+    if (str) {
+        [str drawAtPoint:strPoint withAttributes:attri];
+        
+    }
+    UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resultImage;
+}
+
+- (UIImage *)imageWaterMarkWithAttributedString:(NSAttributedString *)str point:(CGPoint)strPoint image:(UIImage*)image imagePoint:(CGPoint)imgPoint alpha:(CGFloat)alpha {
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, [UIScreen mainScreen].scale);
+    [self drawAtPoint:CGPointMake(0, 0) blendMode:kCGBlendModeNormal alpha:1.0];
+    if (image) {
+        [image drawAtPoint:imgPoint blendMode:kCGBlendModeNormal alpha:alpha];
+    }
+    
+    if (str) {
+        [str drawAtPoint:strPoint];
+    }
+    UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resultImage;
+}
+
+
 #pragma mark - 截取指定视图大小的截图
 + (UIImage *)rh_getImageForView:(UIView *)view {
     
@@ -693,5 +836,70 @@
         });
     });
 }
+
++ (UIImage *)grayscale:(UIImage *)anImage type:(int)type
+{
+    CGImageRef imageRef = anImage.CGImage;
+    size_t width  = CGImageGetWidth(imageRef);
+    size_t height = CGImageGetHeight(imageRef);
+    size_t bitsPerComponent = CGImageGetBitsPerComponent(imageRef);
+    size_t bitsPerPixel = CGImageGetBitsPerPixel(imageRef);
+    size_t bytesPerRow = CGImageGetBytesPerRow(imageRef);
+    CGColorSpaceRef colorSpace = CGImageGetColorSpace(imageRef);
+    CGBitmapInfo bitmapInfo = CGImageGetBitmapInfo(imageRef);
+    bool shouldInterpolate = CGImageGetShouldInterpolate(imageRef);
+    CGColorRenderingIntent intent = CGImageGetRenderingIntent(imageRef);
+    CGDataProviderRef dataProvider = CGImageGetDataProvider(imageRef);
+    CFDataRef data = CGDataProviderCopyData(dataProvider);
+    UInt8 *buffer = (UInt8*)CFDataGetBytePtr(data);
+    NSUInteger  x, y;
+    for (y = 0; y < height; y++) {
+        for (x = 0; x < width; x++) {
+            UInt8 *tmp;
+            tmp = buffer + y * bytesPerRow + x * 4;
+            UInt8 red,green,blue;
+            red = *(tmp + 0);
+            green = *(tmp + 1);
+            blue = *(tmp + 2);
+            UInt8 brightness;
+            switch (type) {
+                case 1:
+                    // 黑白
+                    brightness = (77 * red + 28 * green + 151 * blue) / 256;
+                    *(tmp + 0) = brightness;
+                    *(tmp + 1) = brightness;
+                    *(tmp + 2) = brightness;
+                    break;
+                case 2:
+                    // 原图（变淡）
+                    *(tmp + 0) = red;
+                    *(tmp + 1) = green * 0.7;
+                    *(tmp + 2) = blue * 0.4;
+                    break;
+                case 3:
+                    // 曝光
+                    *(tmp + 0) = 255 - red;
+                    *(tmp + 1) = 255 - green;
+                    *(tmp + 2) = 255 - blue;
+                    break;
+                default:
+                    *(tmp + 0) = red;
+                    *(tmp + 1) = green;
+                    *(tmp + 2) = blue;
+                    break;
+            }
+        }
+    }
+    CFDataRef effectedData = CFDataCreate(NULL, buffer, CFDataGetLength(data));
+    CGDataProviderRef effectedDataProvider = CGDataProviderCreateWithCFData(effectedData);
+    CGImageRef effectedCgImage = CGImageCreate(width, height,bitsPerComponent, bitsPerPixel, bytesPerRow,colorSpace, bitmapInfo, effectedDataProvider,NULL, shouldInterpolate, intent);
+    UIImage *effectedImage = [[UIImage alloc] initWithCGImage:effectedCgImage];
+    CGImageRelease(effectedCgImage);
+    CFRelease(effectedDataProvider);
+    CFRelease(effectedData);
+    CFRelease(data);
+    return effectedImage;
+}
+
 
 @end

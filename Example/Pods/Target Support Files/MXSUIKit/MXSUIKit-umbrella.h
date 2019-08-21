@@ -19,10 +19,14 @@
 #import "UIFont+RHFont.h"
 #import "UIImage+RHImage.h"
 #import "UIImageView+RHAdd.h"
+#import "UIView+RectCorners.h"
 #import "UIView+RHAdd.h"
 #import "UIView+RHAnimation.h"
+#import "UIView+RHBorders.h"
 #import "UIView+RHGesture.h"
+#import "UIView+RHLine.h"
 #import "UIView+RHTransition.h"
+#import "UIView+Shadow.h"
 
 FOUNDATION_EXPORT double MXSUIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char MXSUIKitVersionString[];
