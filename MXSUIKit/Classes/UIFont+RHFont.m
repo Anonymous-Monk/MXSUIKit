@@ -11,7 +11,7 @@
 @implementation UIFont (RHFont)
 
 + (CGFloat)rh_fitScreen:(CGFloat)value {
-    return ceilf([[UIScreen mainScreen] bounds].size.width / (750.0f / 2)  * (value / 2.0f));
+    return ceilf([[UIScreen mainScreen] bounds].size.width / (750.0f / 2)  * (value / 1.0f));
 }
 
 + (UIFont *)rh_fitSystemFontOfSize:(CGFloat)fontSize {
