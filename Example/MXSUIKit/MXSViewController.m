@@ -7,7 +7,7 @@
 //
 
 #import "MXSViewController.h"
-
+#import <MXSUIKit/RHUIKit.h>
 @interface MXSViewController ()
 
 @end
@@ -17,6 +17,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIView *line = [[UIView alloc]initWithFrame:CGRectMake(30, 100, 200, 30)];
+    line.backgroundColor = [UIColor whiteColor];
+    [line addBottomLine:12 rightSpace:12 color:[UIColor redColor]];
+    [line addTopLine:12 rightSpace:12 color:[UIColor orangeColor]];
+    [line addLeftLine:2 bottomSpace:2 color:[UIColor blueColor]];
+    [line addRightLine:2 bottomSpace:2 color:[UIColor greenColor]];
+    [self.view addSubview:line];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

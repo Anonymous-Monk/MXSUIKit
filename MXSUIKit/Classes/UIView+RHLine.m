@@ -10,7 +10,7 @@
 
 static const CGFloat kLineDefault = 0.5f;
 //hexString @"dddddd"
-#define kLineColor [UIColor colorWithRed:221/255.0 green:221/255.0 blue:221/255.0 alpha:1.0]
+#define kLineColor [UIColor colorWithRed:237/255.0 green:237/255.0 blue:238/255.0 alpha:1.0]
 
 @implementation UIView (RHLine)
 
@@ -18,8 +18,12 @@ static const CGFloat kLineDefault = 0.5f;
     return [self addTopLine:0.0f rightSpace:0.0f];
 }
 - (UIView *)addTopLine:(CGFloat)leftSpace rightSpace:(CGFloat)rightSpace {
+    return [self addTopLine:leftSpace rightSpace:rightSpace color:kLineColor];
+}
+
+- (UIView *)addTopLine:(CGFloat)leftSpace rightSpace:(CGFloat)rightSpace color:(UIColor *)color {
     UIView *_topLine         = [UIView new];
-    _topLine.backgroundColor = kLineColor;
+    _topLine.backgroundColor = color;
     [self addSubview:_topLine];
     
     //add constraints
@@ -28,7 +32,7 @@ static const CGFloat kLineDefault = 0.5f;
     NSDictionary *metrics         = @{@"kLineDefault":@(kLineDefault),
                                       @"leftSpace":@(leftSpace),
                                       @"rightSpace":@(rightSpace)
-                                      };
+    };
     NSArray *constraintV = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_topLine(kLineDefault)]"
                                                                    options:0
                                                                    metrics:metrics
@@ -48,8 +52,12 @@ static const CGFloat kLineDefault = 0.5f;
     return [self addLeftLine:0.0f bottomSpace:0.0f];
 }
 - (UIView *)addLeftLine:(CGFloat)topSpace bottomSpace:(CGFloat)bottomSpace {
+    return [self addLeftLine:0.0f bottomSpace:0.0f color:kLineColor];
+}
+
+- (UIView *)addLeftLine:(CGFloat)topSpace bottomSpace:(CGFloat)bottomSpace color:(UIColor *)color  {
     UIView *_leftLine         = [UIView new];
-    _leftLine.backgroundColor = kLineColor;
+    _leftLine.backgroundColor = color;
     [self addSubview:_leftLine];
     
     //add constraints
@@ -58,7 +66,7 @@ static const CGFloat kLineDefault = 0.5f;
     NSDictionary *metrics         = @{@"kLineDefault":@(kLineDefault),
                                       @"topSpace":@(topSpace),
                                       @"bottomSpace":@(bottomSpace)
-                                      };
+    };
     NSArray *constraintV = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-topSpace-[_leftLine]-bottomSpace-|"
                                                                    options:0
                                                                    metrics:metrics
@@ -79,8 +87,11 @@ static const CGFloat kLineDefault = 0.5f;
 }
 
 - (UIView *)addBottomLine:(CGFloat)leftSpace rightSpace:(CGFloat)rightSpace {
+    return [self addBottomLine:leftSpace rightSpace:rightSpace color:kLineColor];
+}
+- (UIView *)addBottomLine:(CGFloat)leftSpace rightSpace:(CGFloat)rightSpace color:(UIColor *)color  {
     UIView *_bottomLine         = [UIView new];
-    _bottomLine.backgroundColor = kLineColor;
+    _bottomLine.backgroundColor = color;
     [self addSubview:_bottomLine];
     
     //add constraints
@@ -89,7 +100,7 @@ static const CGFloat kLineDefault = 0.5f;
     NSDictionary *metrics         = @{@"kLineDefault":@(kLineDefault),
                                       @"leftSpace":@(leftSpace),
                                       @"rightSpace":@(rightSpace)
-                                      };
+    };
     NSArray *constraintV = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[_bottomLine(kLineDefault)]-0-|"
                                                                    options:0
                                                                    metrics:metrics
@@ -105,12 +116,19 @@ static const CGFloat kLineDefault = 0.5f;
     return _bottomLine;
 }
 
+
+
 - (UIView *)addRightLine {
     return [self addRightLine:0.0f bottomSpace:0.0f];
 }
+
 - (UIView *)addRightLine:(CGFloat)topSpace bottomSpace:(CGFloat)bottomSpace {
+    return [self addRightLine:topSpace bottomSpace:bottomSpace color:kLineColor];
+}
+
+- (UIView *)addRightLine:(CGFloat)topSpace bottomSpace:(CGFloat)bottomSpace color:(UIColor *)color  {
     UIView *_rightLine         = [UIView new];
-    _rightLine.backgroundColor = kLineColor;
+    _rightLine.backgroundColor = color;
     [self addSubview:_rightLine];
     
     //add constraints
@@ -119,7 +137,7 @@ static const CGFloat kLineDefault = 0.5f;
     NSDictionary *metrics         = @{@"kLineDefault":@(kLineDefault),
                                       @"topSpace":@(topSpace),
                                       @"bottomSpace":@(bottomSpace)
-                                      };
+    };
     NSArray *constraintV = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-topSpace-[_rightLine]-bottomSpace-|"
                                                                    options:0
                                                                    metrics:metrics
@@ -134,6 +152,7 @@ static const CGFloat kLineDefault = 0.5f;
     [self addConstraints:constraintH];
     return _rightLine;
 }
+
 
 
 @end
