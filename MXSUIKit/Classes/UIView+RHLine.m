@@ -17,6 +17,9 @@ static const CGFloat kLineDefault = 0.5f;
 - (UIView *)addTopLine {
     return [self addTopLine:0.0f rightSpace:0.0f];
 }
+- (UIView *)addTopLineWithcolor:(UIColor *)color {
+    return [self addTopLine:0.0f rightSpace:0.0f color:color];
+}
 - (UIView *)addTopLine:(CGFloat)leftSpace rightSpace:(CGFloat)rightSpace {
     return [self addTopLine:leftSpace rightSpace:rightSpace color:kLineColor];
 }
@@ -50,6 +53,9 @@ static const CGFloat kLineDefault = 0.5f;
 
 - (UIView *)addLeftLine {
     return [self addLeftLine:0.0f bottomSpace:0.0f];
+}
+- (UIView *)addLeftLineWithcolor:(UIColor *)color {
+    return [self addLeftLine:0.0f bottomSpace:0.0f color:color];
 }
 - (UIView *)addLeftLine:(CGFloat)topSpace bottomSpace:(CGFloat)bottomSpace {
     return [self addLeftLine:0.0f bottomSpace:0.0f color:kLineColor];
@@ -85,7 +91,9 @@ static const CGFloat kLineDefault = 0.5f;
 - (UIView *)addBottomLine {
     return [self addBottomLine:0.0f rightSpace:0.0f];
 }
-
+- (UIView *)addBottomLineWithcolor:(UIColor *)color {
+     return [self addBottomLine:0.0f rightSpace:0.0f color:color];
+}
 - (UIView *)addBottomLine:(CGFloat)leftSpace rightSpace:(CGFloat)rightSpace {
     return [self addBottomLine:leftSpace rightSpace:rightSpace color:kLineColor];
 }
@@ -121,7 +129,9 @@ static const CGFloat kLineDefault = 0.5f;
 - (UIView *)addRightLine {
     return [self addRightLine:0.0f bottomSpace:0.0f];
 }
-
+- (UIView *)addRightLineWithcolor:(UIColor *)color {
+    return [self addRightLine:0.0f bottomSpace:0.0f color:color];
+}
 - (UIView *)addRightLine:(CGFloat)topSpace bottomSpace:(CGFloat)bottomSpace {
     return [self addRightLine:topSpace bottomSpace:bottomSpace color:kLineColor];
 }
